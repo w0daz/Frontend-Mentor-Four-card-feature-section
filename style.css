@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'poppins', san-serif;
+}
+
+.card {
+    width: 420px;
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toptext {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding-bottom: 80px;
+}
+
+.card > .toptext > h1 {
+    font-weight: 200;
+    font-size: 2em;
+}
+
+.card > .toptext > h1 > span {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.card > .toptext > p {
+    font-size: 1.27em;
+    font-weight: 400;
+    color: hsl(229, 6%, 66%);
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.cards > * {
+    width: 100%;
+    height: 290px;
+    box-shadow: 0 10px 10px hsl(212, 90%, 92%);
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.boxOne {
+    border-top: 6px solid hsl(180, 62%, 55%);
+}
+
+.boxTwo {
+    border-top: 6px solid hsl(0, 78%, 62%);
+}
+
+.boxThree {
+    border-top: 6px solid hsl(34, 97%, 64%);
+}
+
+.boxFour {
+    border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+.cards > * > p {
+    font-size: 1.1em;
+    font-weight: 400;
+    line-height: 1.7;
+    color: hsl(229, 6%, 66%);
+}
+.cards > * > img {
+  align-self: end;
+  position: relative;
+  bottom: -30px;
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        width: 1300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+   .card > .toptext > p {
+        width: 500px;
+        font-size: 1.0em;
+    }
+    .cards > * {
+        width: 400px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .cards .center {
+        transform: translateY(50%)
+    }
+
+}
