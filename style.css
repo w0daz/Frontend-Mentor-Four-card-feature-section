@@ -68,7 +68,7 @@ body {
 }
 
 
-.boxOne {
+/* .boxOne {
     border-top: 6px solid hsl(180, 62%, 55%);
 }
 
@@ -82,13 +82,14 @@ body {
 
 .boxFour {
     border-top: 6px solid hsl(212, 86%, 64%);
-}
+} */
 
 .card-bar {
     position: relative;
 }
 
 .top-bar {
+    border-radius: 10px 10px 0 0;
     position: absolute;
     top: 0;
     left: 0;
