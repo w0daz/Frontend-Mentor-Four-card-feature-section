@@ -67,6 +67,7 @@ body {
     row-gap: 5px;
 }
 
+
 .boxOne {
     border-top: 6px solid hsl(180, 62%, 55%);
 }
@@ -81,6 +82,34 @@ body {
 
 .boxFour {
     border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+.card-bar {
+    position: relative;
+}
+
+.top-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: inherit;
+ }
+
+.boxOne > .supervision-bar {
+    background-color: hsl(180, 62%, 55%);
+}
+
+.boxTwo > .supervision-bar {
+    background-color: hsl(0, 78%, 62%);
+}
+
+.boxThree > .supervision-bar {
+    background-color: hsl(34, 97%, 64%);
+}
+
+.boxFour > .supervision-bar {
+    background-color: hsl(212, 86%, 64%);
 }
 
 .cards > * > h1 {
